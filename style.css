@@ -371,6 +371,7 @@ img {
     line-height: 1.1;
     margin: 1px;
     gap: 0.1rem;
+    text-align: center;
 }
 
 .clue-wr {
