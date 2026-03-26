@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pangolin&display=swap');
 
 :root {
     --color-bg: #dcb5b5;
     --color-text: #632b31;
     --color-white: #ffffff;
-    --font-jaro: 'Jaro', sans-serif;
-    --font-hand: 'Just Another Hand', cursive;
+    --font-jaro: 'Jaro', 'Lilita One';
+    --font-hand: 'Just Again Down Here', 'Pangolin';
     --stroke: -1.5px -1.5px 0 #632b2b, 1.5px -1.5px 0 #632b2b, -1.5px 1.5px 0 #632b2b, 1.5px 1.5px 0 #632b2b;
 }
 
@@ -43,11 +43,11 @@ body {
 
 .scroll-indicator {
     position: fixed;
-    left: 2vw;
-    top: 50%;
+    right: 2vw;
+    top: 5%;
     transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     z-index: 25;
     opacity: 0;
@@ -67,7 +67,7 @@ body {
 }
 
 .indicator-dot.active {
-    height: 48px;
+    height: 42px;
     background-color: var(--color-text);
     border-color: var(--color-text);
 }
@@ -101,7 +101,7 @@ body {
     color: var(--color-white);
     text-align: center;
     font-family: var(--font-hand);
-    font-size: clamp(18px, 2vw, 32px);
+    font-size: clamp(12px, 1.4vw, 28px);
     font-weight: 400;
     text-decoration: underline;
     transition: transform 0.25s cubic-bezier(.4,1.5,.5,1), opacity 0.2s;
@@ -197,7 +197,7 @@ img {
 .scroll-down {
     position: fixed;
     bottom: 4vh;
-    left: 50%;
+    left: 80%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
@@ -222,7 +222,7 @@ img {
 .under-text {
     font-family: var(--font-hand);
     color: var(--color-white);
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 1px;
     animation: bip 1s infinite;
 }
@@ -230,7 +230,7 @@ img {
 .scroll-text {
     font-family: var(--font-hand);
     color: var(--color-white);
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
@@ -345,7 +345,7 @@ img {
 .action-text {
     color: var(--color-white);
     font-family: var(--font-hand);
-    font-size: 150px;
+    font-size: 90px;
     letter-spacing: 2px;
     line-height: 1.1;
     margin: 0;
@@ -354,7 +354,7 @@ img {
 .blinky-text {
     color: var(--color-white);
     font-family: var(--font-hand);
-    font-size: 4rem;
+    font-size: 2.4rem;
     letter-spacing: 2px;
     line-height: 1.1;
     margin: 1px;
@@ -366,7 +366,7 @@ img {
 .clue-text {
     color: var(--color-white);
     font-family: var(--font-hand);
-    font-size: 2.1rem;
+    font-size: 1.4rem;
     letter-spacing: 2px;
     line-height: 1.1;
     margin: 1px;
@@ -385,8 +385,8 @@ img {
 
 .workshops {
     position: absolute;
-    left: 2vw;
-    bottom: 2vw;
+    left: 40%;
+    bottom: 4vw;
     z-index: 20;
     user-select: none;
 }
@@ -405,7 +405,7 @@ img {
 .workshops-title {
     font-family: var(--font-hand);
     color: var(--color-white);
-    font-size: 5.2rem;
+    font-size: 3.4rem;
     letter-spacing: 1px;
     line-height: 1.1;
     transition: transform 0.25s cubic-bezier(.4,1.5,.5,1);
