@@ -409,7 +409,7 @@ img {
 .workshops-label {
     font-family: var(--font-jaro);
     color: var(--color-white);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     letter-spacing: 0.5px;
     margin-bottom: 0.1em;
     text-shadow: var(--stroke);
